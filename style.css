@@ -18,6 +18,7 @@ button {
   width:200px;
   height:200px;
   margin:2px;
+  border-radius: 100px;
 }
 
 #button1 {
@@ -46,6 +47,13 @@ button {
 }
 #button4:active, #button4.lit {
   background: yellow;
+}
+
+#button5 {
+  background: violet;
+}
+#button5:active, #button5.lit {
+  background: purple;
 }
 
 .hidden {
