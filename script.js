@@ -1,8 +1,10 @@
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 500; //how long to wait before starting playback of the clue sequence
 
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+
+var pattern = [];
+var patternLength = 6;
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
@@ -16,7 +18,14 @@ function startGame() {
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
   document.getElementById("stopBtn").classList.remove("hidden");
+  generatePattern();
   playClueSequence();
+}
+
+function generatePattern() {
+  for (let i = 0; i < patternLength; i++) {
+    pattern[i] = Math.floor(Math.random() * 5) + 1;
+  }
 }
 
 function stopGame() {
@@ -61,6 +70,7 @@ function playClueSequence() {
     delay += clueHoldTime;
     delay += cluePauseTime;
   }
+  clueHoldTime -= clueHoldTime/3;
 }
 
 function guess(btn) {
@@ -74,6 +84,7 @@ function guess(btn) {
     if (guessCounter == progress) {
       //when the progress reach the entire length of the pattern
       if (progress == pattern.length - 1) {
+        clueHoldTime = 1000;
         winGame();
       } else {
         //if the game's progress is not at the end, it increase the progress so
@@ -87,16 +98,20 @@ function guess(btn) {
     }
   } else {
     //when user click incorrect guess, game end
+    clueHoldTime = 1000;
     loseGame();
   }
 }
 
+
+
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 250,
+  2: 330,
+  3: 400,
+  4: 466,
+  5: 500
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
