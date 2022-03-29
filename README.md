@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 * [x] More than 4 functional game buttons
 * [x] Playback speeds up on each turn
 * [x] Computer picks a different pattern each time the game is played
-* [ ] Player only loses after 3 mistakes (instead of on the first mistake)
+* [x] Player only loses after 3 mistakes (instead of on the first mistake)
 * [ ] Game button appearance change goes beyond color (e.g. add an image)
 * [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
@@ -40,23 +40,48 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-**Winning**
-![](https://i.imgur.com/sNskOPg.gif)
-**Losing and showing different pattern**
-![](https://i.imgur.com/7Y081xA.gif)
+**Winning and losing 1 life**
+![](https://i.imgur.com/GS4U2R8.gif)
+**Losing all lives and showing different randomized pattern**
+![](https://i.imgur.com/cr9yhg3.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+
+www.stackoverflow.com, www.w3schools.com, www.youtube.com, https://developer.mozilla.org/
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+The first challenge that I encountered was when the required steps stop giving direct instruction and actually coding the game logic that will handle the guesses.
+This was the only step that required thinking which is unlike the previous steps of simply copying the instructions. 
+The problem for me was that I didn't know where to start solving the problem and was stuck figuring out what to do first. 
+I overcome this problem is by taking on the problem one by one instead of doing it all together.
+By taking on the game logic incrementally, I was able to make progress even if I don't fully understand the scope of the task.
+While I did have some trouble interpreting some of the conditional statements on the flow chart, I eventually got to the right answer by taking a closer look at the code and gaining a better understanding of them.
+With all of the individual pieces finished, it was much easier to connect them all together so that they form the full game logic. 
+Another problem I encountered was when I was implementing one of my optional features. 
+The one that I have the most trouble with was implementing the lives system which is mainly due to mixed information while I was researching online.
+There were two issues that gave me the most trouble, lining up the text next to each other and changing the text within the Javascript.
+The way I solve those two is by looking up documentation of Javascript instead of forums like Stack Overflow as they provide a more general view of the problem compared to the specific user issue found in forums.
+With the right documentation, I was able to solve my problems and finish the lives system.
+
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+The questions that came to my head after completing it would be how how to format 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+If I had more time to work on this project, I would first find out how to organize the button and move them around.
+While it is certainly nice that the buttons would adjust themselves so that they could fit the screen, I don't like the way they reorganize themselves and would prefer them fixed.
+The reason is simply that the placement of the buttons and their location are important in a memory based game.
+I feel like the user experience would improve if I could find a way so that the placement of the buttons would not adjust with different screen sizes.
+Another feature I would make would be to improve the UI so that it looks nicer than just text with a background.
+This could be from having a different font to colorful graphics that would make this game more pleasant to the eye.
+I would also implement more customization so that the player could decide on how difficult they want the game like how long the rounds would go on or the speed of the pattern repeating back.
+This way the user get to decide the experience they want to play aside from the default set by the creator of the game. 
+
+
+
+
 
 
 
