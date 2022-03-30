@@ -4,7 +4,7 @@
 
 Submitted by: **Chaiwat Wongsatjachock**
 
-Time spent: **7** hours spent in total
+Time spent: **8** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/outrageous-purple-ragamuffin
 
@@ -66,10 +66,18 @@ The way I solve those two is by looking up documentation of Javascript instead o
 With the right documentation, I was able to solve my problems and finish the lives system.
 
 
-3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-The questions that came to my head after completing it would be how how to format 
+3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words)
+
+The questions that came to my head after completing it would be how to format the location for the buttons.
+I wanted to rearrange my buttons so that they could form a ring while I was doing the project and it made me wonder where to even begin.
+The code for that seems to be in the CSS but I would not be surprised if I'm wrong. 
+Another question that I have would be how to implement server-side things like having a leaderboard that shows every player's score.
+The player's data have to be stored somewhere and I wonder how the user is able to have their name connected with their score.
+There is also the fact that the leaderboard has to update dynamically so that it will show the current top scorers at all times. 
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+
 If I had more time to work on this project, I would first find out how to organize the button and move them around.
 While it is certainly nice that the buttons would adjust themselves so that they could fit the screen, I don't like the way they reorganize themselves and would prefer them fixed.
 The reason is simply that the placement of the buttons and their location are important in a memory based game.
@@ -77,15 +85,17 @@ I feel like the user experience would improve if I could find a way so that the 
 Another feature I would make would be to improve the UI so that it looks nicer than just text with a background.
 This could be from having a different font to colorful graphics that would make this game more pleasant to the eye.
 I would also implement more customization so that the player could decide on how difficult they want the game like how long the rounds would go on or the speed of the pattern repeating back.
-This way the user get to decide the experience they want to play aside from the default set by the creator of the game. 
-
-
-
-
-
+This way the user gets to decide the experience they want to play aside from the default set by the creator of the game. 
 
 
 ## Interview Recording URL Link
+- If you had your choice, what problems would you like to help solve using technology?
+The problem I want to solve will help people who have trouble using their hand to interact with their mouse or those that don't want to use their hand.
+
+What has been one of your favorite technical topics in your CS studies so far?
+What CS topic has given you a hard time?
+Suppose you’re working on a project with a group and a teammate suggests a feature that you feel strongly will take the project in a bad direction. What do you do?
+What are some of the things you’re hoping to take away from the SITE program?
 
 [My 5-minute Interview Recording](your-link-here)
 
