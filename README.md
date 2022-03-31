@@ -4,7 +4,7 @@
 
 Submitted by: **Chaiwat Wongsatjachock**
 
-Time spent: **8** hours spent in total
+Time spent: **11** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/outrageous-purple-ragamuffin
 
@@ -89,15 +89,11 @@ This way the user gets to decide the experience they want to play aside from the
 
 
 ## Interview Recording URL Link
-- If you had your choice, what problems would you like to help solve using technology?
-The problem I want to solve will help people who have trouble using their hand to interact with their mouse or those that don't want to use their hand.
 
-What has been one of your favorite technical topics in your CS studies so far?
-What CS topic has given you a hard time?
-Suppose you’re working on a project with a group and a teammate suggests a feature that you feel strongly will take the project in a bad direction. What do you do?
-What are some of the things you’re hoping to take away from the SITE program?
+[My 5-minute Interview Recording](https://drive.google.com/file/d/1oAAljXfkSGKQPGgyuYQMqGUyhcqnOK97/view?usp=sharing)
 
-[My 5-minute Interview Recording](your-link-here)
+[Interview Recording Transcript](https://docs.google.com/document/d/1OynfCMJvPFL5r0qpDGI4ubMRSd6XeTnc5iH6H6SDTgg/edit?usp=sharing)
+
 
 
 ## License
@@ -114,4 +110,4 @@ What are some of the things you’re hoping to take away from the SITE program?
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License.
+    limitations under the License.I
