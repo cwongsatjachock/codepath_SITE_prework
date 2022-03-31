@@ -10,10 +10,13 @@ var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
+var lives = 0;
 
 function startGame() {
   //initialize game variables
   progress = 0;
+  lives = 3;
+  document.getElementById("Ntext").innerHTML = lives;
   gamePlaying = true;
   // swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
@@ -70,7 +73,7 @@ function playClueSequence() {
     delay += clueHoldTime;
     delay += cluePauseTime;
   }
-  clueHoldTime -= clueHoldTime/3;
+  
 }
 
 function guess(btn) {
@@ -91,6 +94,7 @@ function guess(btn) {
         //next turn is longer
         progress++;
         playClueSequence();
+        clueHoldTime -= clueHoldTime/3;
       }
     } else {
       //increase guessCounter so it could check with next pattern
@@ -98,8 +102,16 @@ function guess(btn) {
     }
   } else {
     //when user click incorrect guess, game end
-    clueHoldTime = 1000;
-    loseGame();
+    //check amount of lives
+    if (lives > 1) {
+      lives -= 1;
+      document.getElementById("Ntext").innerHTML = lives;
+      playClueSequence();
+      
+    } else {
+      loseGame();
+      clueHoldTime = 1000;
+    } 
   }
 }
 
